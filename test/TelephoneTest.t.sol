@@ -5,12 +5,10 @@ import {Telephone} from "../src/Telephone.sol";
 import {TelephoneAttacker} from "../src/TelephoneAttacker.sol";
 import {Test, console} from "forge-std/Test.sol";
 
-
 contract TelephoneTest is Test {
     Telephone target;
     TelephoneAttacker attacker;
     address USER = makeAddr("user");
-
 
     constructor() {
         target = new Telephone();

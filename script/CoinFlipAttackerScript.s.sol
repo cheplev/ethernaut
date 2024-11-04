@@ -8,7 +8,7 @@ import {Script} from "forge-std/Script.sol";
 contract CoinFlipAttackerScript is Script {
     CoinFlip target;
     CoinFlipAttacker attacker;
-    
+
     function run() public {
         target = CoinFlip(0x7Cd9366f988eaB0764ff967C6f2799Dc757bb9A5);
         vm.startBroadcast();
@@ -16,5 +16,4 @@ contract CoinFlipAttackerScript is Script {
         attacker.attack();
         vm.stopBroadcast();
     }
-
 }

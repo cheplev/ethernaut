@@ -13,11 +13,9 @@ contract ForceAttackerScript is Script {
         target = Force(0x99F16fC55A0D6709dAeE12EF204d8041754aEaec);
         vm.startBroadcast();
 
-        attacker = (new ForceAttacker){value: 1000000 gwei}(address(target)); 
+        attacker = (new ForceAttacker){value: 1000000 gwei}(address(target));
         attacker.attack();
 
         vm.stopBroadcast();
     }
-
- 
 }
